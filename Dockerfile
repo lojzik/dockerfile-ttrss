@@ -13,6 +13,7 @@ RUN apt-get update \
 	&& chmod -R 777 /tt-rss/feed-icons \
 	&& chmod -R 777 /tt-rss/lock \
 	&& apt-get -y remove git-core \
+	&& apt-get -y autoremove \
     && apt-get -y clean \
     && apt-get -y purge \
 	&& rm -rf /tt-rss/.git \
